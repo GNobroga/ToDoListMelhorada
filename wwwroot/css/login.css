@@ -1,0 +1,227 @@
+/* Form */
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Login */
+
+
+.form-login {
+    background-color: var(--first-color);
+    max-width: 500px;
+    width: 100%;
+    min-height: 510px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+    position: relative;
+    border-radius: var(--space-sm);
+}
+
+.form-login h1 {
+    font-size: 4rem;
+    text-align: center;
+    color: var(--fifth-color);
+    padding: var(--space-md);
+}
+
+.form-login h1:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, transparent 10%, #fff, transparent);
+    margin-top: var(--space-sm);
+    background-position: 100%;
+}
+
+.form-login .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+    color: var(--second-color);
+}
+
+.form-login .form-group input {
+    width: 100%;
+    height: 50px;
+    outline: none;
+    border: none;
+    padding-left: 0.8rem;
+    font-size: 1rem;
+}
+
+.form-login button[type=submit] {
+    background-color: #337ab7;
+    width: 100%;
+    color: #fff;
+    padding: var(--space);
+    cursor: pointer;
+    font-size: 1.3rem;
+    margin: 0 auto;
+    margin-top: var(--space-md);
+    outline: none;
+    border: none;
+}
+
+.form-login button[type=submit]:hover {
+    background-color: #3379b79a;
+}
+
+.form-login .create-account {
+    width: 100%;
+    background-color: #454d6b;
+    height: 9vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-md);
+    padding: var(--space-lg);
+}
+
+.form-login .create-account p {
+   font-size: 1.2rem;
+   color: #fff;
+   margin-right: var(--space-md);
+}
+
+
+.form-login .create-account a {
+   background-color: #337ab7;
+   font-size: 0.9rem;
+   font-weight: bold;
+   cursor: pointer;
+   padding: var(--space-sm);
+   color: #fff;
+}
+ 
+.form-login .create-account a:hover {
+    background-color: #3379b79a;
+}
+ 
+
+.form-login .error {
+    color: rgba(231, 96, 96, 0.804);
+}
+
+ 
+.form-login .error ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* Register */
+
+.form-register {
+    background-color: var(--first-color);
+    max-width: 500px;
+    width: 100%;
+    min-height: 510px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+    position: relative;
+    border-radius: var(--space-sm);
+}
+
+.form-register h1 {
+    font-size: 4rem;
+    text-align: center;
+    color: var(--fifth-color);
+    padding: var(--space-md);
+}
+
+.form-register h1:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, transparent 10%, #fff, transparent);
+    margin-top: var(--space-sm);
+    background-position: 100%;
+}
+
+.form-register .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+    color: var(--second-color);
+}
+
+.form-register .form-group input {
+    width: 100%;
+    height: 50px;
+    outline: none;
+    border: none;
+    padding-left: 0.8rem;
+    font-size: 1rem;
+}
+
+.form-register button[type=submit] {
+    background-color: #337ab7;
+    width: 100%;
+    color: #fff;
+    padding: var(--space);
+    cursor: pointer;
+    font-size: 1.3rem;
+    margin: 0 auto;
+    margin-top: var(--space-md);
+    outline: none;
+    border: none;
+}
+
+.form-register button[type=submit]:hover {
+    background-color: #3379b79a;
+}
+
+.form-register .create-account {
+    width: 100%;
+    background-color: #454d6b;
+    height: 9vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-md);
+    padding: var(--space-lg);
+}
+
+.form-register .create-account p {
+   font-size: 1.2rem;
+   color: #fff;
+   margin-right: var(--space-md);
+}
+
+
+.form-register .create-account a {
+   background-color: #337ab7;
+   font-size: 0.9rem;
+   font-weight: bold;
+   cursor: pointer;
+   padding: var(--space-sm);
+   color: #fff;
+}
+ 
+.form-register .create-account a:hover {
+    background-color: #3379b79a;
+}
+ 
+
+.form-register .error {
+    color: rgba(231, 96, 96, 0.804);
+}
+
+ 
+.form-register .error ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}

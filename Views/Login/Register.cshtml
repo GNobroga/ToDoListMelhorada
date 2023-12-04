@@ -1,0 +1,37 @@
+@model RegisterViewModel
+
+<div class="form-container">
+    <form class="form-register" asp-action="Register" method="post">
+        <h1>Cadastrar-se</h1>
+
+        <div asp-validation-summary="All" class="error"></div>
+
+         <div class="form-group">
+            <label asp-for="@Model.Username"></label>
+            <input asp-for="@Model.Username" placeholder="Username">
+        </div>
+
+        <div class="form-group">
+            <label asp-for="@Model.Email"></label>
+            <input asp-for="@Model.Email" placeholder="E-mail">
+        </div>
+
+        <div class="form-group">
+            <label asp-for="@Model.Password"></label>
+            <input asp-for="@Model.Password" placeholder="Senha">
+        </div>
+
+        <div class="form-group">
+            <label asp-for="@Model.PasswordConfirmation"></label>
+            <input asp-for="@Model.PasswordConfirmation" placeholder="Senha">
+        </div>
+
+        <button type="submit">Cadastrar</button>
+
+        <div class="create-account">
+            <p>Se ja tiver uma conta, clique em</p>
+            <a asp-action="Sign">Conectar-se</a>
+        </div>
+
+    </form>
+</div>
